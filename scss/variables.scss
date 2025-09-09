@@ -1,0 +1,14 @@
+$color1: #e1e6fa;
+$color2: #c4d7ed;
+$color3: #abc8e2;
+$color4: #375d81;
+$color5: #183152;
+
+// Color Palette using Map value
+$colors: (
+  "red": #ff0000,
+  "green": #00ff00,
+  "blue": #0000ff,
+);
+// Remove '/' in code below
+// @debug map-get($/map: $-colors, $/key: 'red');

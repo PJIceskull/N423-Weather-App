@@ -1,0 +1,19 @@
+{
+  "name": "homework-two",
+  "version": "1.0.0",
+  "description": "Pierce Issah",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile:sass": "sass scss/styles.scss css/styles.css -w",
+    "serve": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.92.1"
+  }
+}
