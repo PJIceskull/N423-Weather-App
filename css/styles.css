@@ -30,6 +30,10 @@ p {
   min-height: 80%;
 }
 
+h1 {
+  color: #183152;
+}
+
 nav {
   height: 60px;
   background-color: #183152;
@@ -40,6 +44,13 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
+}
+
+.weatherBox {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
