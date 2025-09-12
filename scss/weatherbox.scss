@@ -5,3 +5,19 @@
   //   width: 500px;
   margin-bottom: 15px;
 }
+.headerText {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 45px;
+  border-bottom: 3px solid $color5;
+  padding-bottom: 15px;
+  h3,
+  p {
+    margin-bottom: 0;
+  }
+  h3 {
+    // font-weight: lighter;
+    font-size: 24px;
+  }
+}

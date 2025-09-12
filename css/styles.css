@@ -34,6 +34,10 @@ h1 {
   color: #183152;
 }
 
+.blueText {
+  color: #375d81;
+}
+
 nav {
   height: 60px;
   background-color: #183152;
@@ -51,6 +55,22 @@ nav a {
   padding: 25px;
   border-radius: 15px;
   margin-bottom: 15px;
+}
+
+.headerText {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 45px;
+  border-bottom: 3px solid #183152;
+  padding-bottom: 15px;
+}
+.headerText h3,
+.headerText p {
+  margin-bottom: 0;
+}
+.headerText h3 {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
