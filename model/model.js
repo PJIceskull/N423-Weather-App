@@ -34,9 +34,9 @@ export function getCurrentWeather() {
 
     $(".weatherBox").html(
       `<div class="headerText">${headerText}</div><section class="imageSect">${weatherImage}</section>        <div class="weatherInfo">
-          <p>Winds</p>
-          <p>Winds Gust</p>
-          <p>Humidity</p>
+          <p>Winds: ${apiCurrent.wind_mph} mph</p>
+          <p>Winds Gust: ${apiCurrent.gust_mph} mph</p>
+          <p>Humidity: ${apiCurrent.humidity}%</p>
         </div>`
     );
   });
