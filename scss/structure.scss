@@ -35,3 +35,9 @@ h1 {
 .blueText {
   color: $color4;
 }
+
+.weatherBox,
+.forecastBox {
+  background-color: #ffffff;
+  border-radius: 15px;
+}

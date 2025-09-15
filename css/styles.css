@@ -39,6 +39,12 @@ h1 {
   color: #375d81;
 }
 
+.weatherBox,
+.forecastBox {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
 nav {
   height: 60px;
   background-color: #183152;
@@ -52,9 +58,7 @@ nav a {
 }
 
 .weatherBox {
-  background-color: #ffffff;
   padding: 25px;
-  border-radius: 15px;
   margin-bottom: 15px;
 }
 
