@@ -120,4 +120,45 @@ nav a {
   color: #abc8e2;
 }
 
+.forecastBox {
+  width: 85%;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.forecastBox .headerText {
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.dailyWeather {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.dailyWeather .dailyItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  border-bottom: 2px solid #abc8e2;
+}
+
+.dailyItem {
+  padding: 13px 0;
+}
+.dailyItem h3,
+.dailyItem p {
+  margin-bottom: 0;
+}
+.dailyItem .tempGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.dailyItem .description p {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

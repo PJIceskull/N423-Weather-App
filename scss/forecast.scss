@@ -1,2 +1,43 @@
 .forecastBox {
+  //   padding: 15px 0;
+  width: 85%;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  .headerText {
+    padding: 15px;
+    margin-bottom: 0;
+  }
+}
+.dailyWeather {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  .dailyItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 2px solid $color3;
+  }
+}
+.dailyItem {
+  padding: 13px 0;
+  h3,
+  p {
+    margin-bottom: 0;
+  }
+  .weatherIcon {
+  }
+  .tempGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .description {
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
