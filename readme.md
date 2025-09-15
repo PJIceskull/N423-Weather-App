@@ -15,4 +15,8 @@ Pierce Issah
 
 ### About Project
 
+For this project, I will be creating a basic weather app using the api from [WeatherAPI.com](https://www.weatherapi.com/).
+
 ### Objectives
+
+Help gain a better understand of how to retrieve and display data.
