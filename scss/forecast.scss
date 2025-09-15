@@ -39,10 +39,20 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    h3 {
+      font-size: 21px;
+    }
   }
   .description {
+    gap: 5px;
+    h3 {
+      font-size: 18px;
+      color: $color4;
+    }
     p {
       margin-bottom: 0;
+      font-size: 13px;
+      color: $color3;
     }
   }
 }

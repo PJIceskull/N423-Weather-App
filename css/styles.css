@@ -164,8 +164,20 @@ nav a {
   justify-content: space-evenly;
   flex-direction: row;
 }
+.dailyItem .tempGroup h3 {
+  font-size: 21px;
+}
+.dailyItem .description {
+  gap: 5px;
+}
+.dailyItem .description h3 {
+  font-size: 18px;
+  color: #375d81;
+}
 .dailyItem .description p {
   margin-bottom: 0;
+  font-size: 13px;
+  color: #abc8e2;
 }
 
 /*# sourceMappingURL=styles.css.map */

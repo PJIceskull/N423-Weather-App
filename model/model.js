@@ -25,8 +25,8 @@ export function getCurrentWeather() {
             <h3>${apiCurrentCondition.text}</h3>
           </div>
           <div class="tempGroup">
-            <h3>${apiCurrent.temp_f} &deg;F</h3>
-            <p>${apiCurrent.temp_c} &deg;C</p>
+            <h3>${apiCurrent.temp_f}&deg;</h3>
+            <p>${apiCurrent.temp_c}&deg;</p>
           </div>`;
 
     $(".dateHeader").html(
@@ -61,22 +61,24 @@ export function getForecast() {
 
     $.each(forecastCollection, function (idx, day) {
       // console.log(idx);
-      console.log(day);
+      // console.log(day);
+      let dayInfo = day.day;
       let dayWeatherIcon = day.day.condition;
 
       $(".dailyWeather").append(`
           <div class="dailyItem">
-            <h3>${forecastLocation.localtime}</h3>
+            <h3>${day.date}</h3>
             <div class="weatherIcon">
               <img src="${dayWeatherIcon.icon}" alt="${dayWeatherIcon.text}" />
               <div class="tempGroup">
-                <h3>F Temp &deg;</h3>
-                <p>C Temp &deg;</p>
+                <h3>${dayInfo.avgtemp_f}&deg;</h3>
+                <p>${dayInfo.avgtemp_c}&deg;</p>
               </div>
             </div>
             <div class="description">
-              <p>Weather Description</p>
-              <p>Chance of Rain %</p>
+              <h3>${dayWeatherIcon.text}</h3>
+              <p>There is a ${dayInfo.daily_chance_of_rain}% chance of Rain</p>
+              <p>There is a ${dayInfo.daily_chance_of_snow}% chance of Snow</p>
             </div>
           </div>
         `);
