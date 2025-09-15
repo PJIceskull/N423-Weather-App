@@ -1,4 +1,5 @@
 const apiKey = "ec6efbb25da2451c8fe152440242309"; // Weather API Key
+let numberOfDays = 5; // The number of days
 
 export function getCurrentWeather() {
   let currentWeatherURL = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Indianapolis&aqi=no`;
@@ -8,11 +9,11 @@ export function getCurrentWeather() {
   //   console.log(currentWeatherURL);
 
   $.getJSON(currentWeatherURL, function (data) {
-    console.log(data);
-    console.log(data.current);
+    // console.log(data);
+    // console.log(data.current);
     let apiLocation = data.location; // Get the "location" group of data
     let apiCurrent = data.current; // The shorthand for getting the data in the "Current" group
-    let apiCurrentCondition = apiCurrent.condition;
+    let apiCurrentCondition = apiCurrent.condition; // For geting information about Image
 
     // Current Weather Info
     let headerText = `<h3>Current Weather</h3><p>${apiLocation.localtime}</p>`;
@@ -39,5 +40,22 @@ export function getCurrentWeather() {
           <p>Humidity: ${apiCurrent.humidity}%</p>
         </div>`
     );
+  });
+}
+
+export function getForecast() {
+  let forecastURL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=Indianapolis&days=${numberOfDays}&aqi=yes&alerts=no`;
+
+  // console.log(forecastURL);
+
+  $.getJSON(forecastURL, function (data) {
+    let forecastCollection = data.forecast.forecastday; // Gets the Arrays for each Forcast day
+    let forecastLocation = data.location; // Get the "location" group of data
+    let forecastCurrent = data.current; // The shorthand for getting the data in the "Current" group
+    let forecastCondition = forecastCurrent.condition; // For geting information about Image
+    let dayWeatherIcon = day.condition;
+
+    console.log(data);
+    console.log(forecastCollection);
   });
 }
