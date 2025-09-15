@@ -28,6 +28,11 @@
     margin-bottom: 0;
   }
   .weatherIcon {
+    flex-direction: row;
+    gap: 10px;
+    img {
+      width: 64px;
+    }
   }
   .tempGroup {
     display: flex;

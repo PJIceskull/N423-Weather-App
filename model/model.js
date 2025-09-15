@@ -53,9 +53,33 @@ export function getForecast() {
     let forecastLocation = data.location; // Get the "location" group of data
     let forecastCurrent = data.current; // The shorthand for getting the data in the "Current" group
     let forecastCondition = forecastCurrent.condition; // For geting information about Image
-    let dayWeatherIcon = day.condition;
 
     console.log(data);
     console.log(forecastCollection);
+
+    let forecastCount = numberOfDays; // set count to "Number of Days"
+
+    $.each(forecastCollection, function (idx, day) {
+      // console.log(idx);
+      console.log(day);
+      let dayWeatherIcon = day.day.condition;
+
+      $(".dailyWeather").append(`
+          <div class="dailyItem">
+            <h3>${forecastLocation.localtime}</h3>
+            <div class="weatherIcon">
+              <img src="${dayWeatherIcon.icon}" alt="${dayWeatherIcon.text}" />
+              <div class="tempGroup">
+                <h3>F Temp &deg;</h3>
+                <p>C Temp &deg;</p>
+              </div>
+            </div>
+            <div class="description">
+              <p>Weather Description</p>
+              <p>Chance of Rain %</p>
+            </div>
+          </div>
+        `);
+    });
   });
 }

@@ -151,6 +151,13 @@ nav a {
 .dailyItem p {
   margin-bottom: 0;
 }
+.dailyItem .weatherIcon {
+  flex-direction: row;
+  gap: 10px;
+}
+.dailyItem .weatherIcon img {
+  width: 64px;
+}
 .dailyItem .tempGroup {
   display: flex;
   align-items: center;
