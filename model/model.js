@@ -1,6 +1,17 @@
 const apiKey = "ec6efbb25da2451c8fe152440242309"; // Weather API Key
 let numberOfDays = 5; // The number of days
 let yourLocation = "Indianapolis"; // Variable for user's location in API. Value can be a number (Zip Code) or string (City or Country).
+// let enteredLocation = "";
+
+export function getUserLocation() {
+  let enteredLocation = "";
+  enteredLocation = $("#userLocation").val();
+  // console.log("Button Clicked");
+  console.log(enteredLocation);
+
+  yourLocation = enteredLocation;
+  console.log(yourLocation);
+}
 
 export function getCurrentWeather() {
   let currentWeatherURL = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${yourLocation}&aqi=no`;
