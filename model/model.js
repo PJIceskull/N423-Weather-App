@@ -1,8 +1,9 @@
 const apiKey = "ec6efbb25da2451c8fe152440242309"; // Weather API Key
 let numberOfDays = 5; // The number of days
+let yourLocation = "Indianapolis"; // Variable for user's location in API. Value can be a number (Zip Code) or string (City or Country).
 
 export function getCurrentWeather() {
-  let currentWeatherURL = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Indianapolis&aqi=no`;
+  let currentWeatherURL = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${yourLocation}&aqi=no`;
 
   // Test JSON data
   // Log
@@ -44,7 +45,7 @@ export function getCurrentWeather() {
 }
 
 export function getForecast() {
-  let forecastURL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=Indianapolis&days=${numberOfDays}&aqi=yes&alerts=no`;
+  let forecastURL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${yourLocation}&days=${numberOfDays}&aqi=no&alerts=no`;
 
   // console.log(forecastURL);
 
