@@ -1,0 +1,43 @@
+.locationSearch {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  label {
+    font-size: 21px;
+    color: $color5;
+    font-weight: bold;
+    // align-self: flex-start;
+  }
+  input {
+    padding: 12px 10px;
+    color: $color4;
+    border: none;
+    border-bottom: 2px solid $color5;
+  }
+  #userLocation {
+    width: 45vw;
+    text-align: center;
+  }
+  #search {
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 21px;
+    font-weight: bold;
+    border: 3px solid $color5;
+    background-color: $color5;
+    color: $color1;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    &:hover {
+      background-color: $color1;
+      color: $color5;
+    }
+    &:active {
+      background-color: #ffffff;
+    }
+  }
+}

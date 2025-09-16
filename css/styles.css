@@ -57,6 +57,49 @@ nav a {
   text-decoration: none;
 }
 
+.locationSearch {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+.locationSearch label {
+  font-size: 21px;
+  color: #183152;
+  font-weight: bold;
+}
+.locationSearch input {
+  padding: 12px 10px;
+  color: #375d81;
+  border: none;
+  border-bottom: 2px solid #183152;
+}
+.locationSearch #userLocation {
+  width: 45vw;
+  text-align: center;
+}
+.locationSearch #search {
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 21px;
+  font-weight: bold;
+  border: 3px solid #183152;
+  background-color: #183152;
+  color: #e1e6fa;
+  cursor: pointer;
+  transition-duration: 0.25s;
+}
+.locationSearch #search:hover {
+  background-color: #e1e6fa;
+  color: #183152;
+}
+.locationSearch #search:active {
+  background-color: #ffffff;
+}
+
 .weatherBox {
   padding: 25px;
   margin-bottom: 15px;
